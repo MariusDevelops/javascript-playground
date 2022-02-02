@@ -1,4 +1,5 @@
 ////////////////////// TOGGLE ////////////////////
+
 // toggle dark-mode
 function darkMode() {
   const element = document.body;
@@ -29,4 +30,9 @@ function toggleSwap() {
 function toggleClass() {
   let element = document.getElementById("changeTextStyle");
   element.classList.toggle("toggleClass");
+}
+
+// toggle icon
+function toggleIcon(x) {
+  x.classList.toggle("fa-thumbs-down");
 }
