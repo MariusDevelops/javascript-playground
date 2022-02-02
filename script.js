@@ -7,25 +7,26 @@ function darkMode() {
 
 // show/hide
 function showHide() {
-  var x = document.getElementById("showHide");
+  let x = document.getElementById("showHide");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
     x.style.display = "block";
   }
 }
-//  if (x.style.display === "none") {
-//    x.style.display = "block";
-//  } else {
-//    x.style.display = "none";
-//  }
 
 // toggle/swap text
 function toggleSwap() {
-  var x = document.getElementById("toggleSwap");
+  let x = document.getElementById("toggleSwap");
   if (x.innerHTML === "Hello!") {
     x.innerHTML = "Want some pancakes?";
   } else {
     x.innerHTML = "Hello!";
   }
+}
+
+// toggle class
+function toggleClass() {
+  let element = document.getElementById("changeTextStyle");
+  element.classList.toggle("toggleClass");
 }
