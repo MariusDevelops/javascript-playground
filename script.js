@@ -1,3 +1,4 @@
+////////////////////// TOGGLE ////////////////////
 // toggle dark-mode
 function darkMode() {
   const element = document.body;
@@ -18,3 +19,13 @@ function showHide() {
 //  } else {
 //    x.style.display = "none";
 //  }
+
+// toggle/swap text
+function toggleSwap() {
+  var x = document.getElementById("toggleSwap");
+  if (x.innerHTML === "Hello!") {
+    x.innerHTML = "Want some pancakes?";
+  } else {
+    x.innerHTML = "Hello!";
+  }
+}
