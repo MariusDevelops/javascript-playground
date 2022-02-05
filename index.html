@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Thumbs Up Icon-->
+    <!-- Thumbs Up Icon -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -14,7 +14,29 @@
   </head>
   <body>
     <h1>JavaScript Playground</h1>
+    <!-- Sun and Moon Icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <!-- TOGGLE START -->
     <h2>Toggle Buttons</h2>
+    <!-- toggle dark-mode slide start -->
+    <div>
+      <input type="checkbox" class="checkbox" id="checkbox" />
+      <label for="checkbox" class="label">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, officia?
+    </p>
+    <!-- toggle dark-mode slide end -->
+
     <button onclick="darkMode()">Toggle Dark Mode</button>
 
     <button onclick="showHide()">Show / Hide Element</button>
@@ -27,6 +49,7 @@
     <div id="changeTextStyle">Code code code code!</div>
 
     <i onclick="toggleIcon(this)" class="fa fa-thumbs-up"></i>
+    <!-- TOGGLE END -->
 
     <script src="./script.js"></script>
   </body>

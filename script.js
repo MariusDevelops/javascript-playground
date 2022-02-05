@@ -1,4 +1,11 @@
-////////////////////// TOGGLE ////////////////////
+////////// TOGGLE START ////////////
+// toggle dark-mode slide
+const checkbox = document.getElementById("checkbox");
+
+checkbox.addEventListener("change", () => {
+  // change the theme of a website
+  document.body.classList.toggle("dark");
+});
 
 // toggle dark-mode
 function darkMode() {
@@ -36,3 +43,4 @@ function toggleClass() {
 function toggleIcon(x) {
   x.classList.toggle("fa-thumbs-down");
 }
+////////// TOGGLE END ////////////
