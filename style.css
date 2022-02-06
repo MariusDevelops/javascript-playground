@@ -14,6 +14,63 @@ body {
 }
 
 /* ////////// TOGGLE START //////////// */
+/* three ball slider */
+html[data-colormode="theme-1"] {
+  /* theme 1 */
+  /* Backgrounds */
+  --main-bgr: rgb(123, 255, 134);
+  --backgr: rgb(30, 145, 59);
+  --text-color: black;
+  --ball: red;
+}
+
+html[data-colormode="theme-2"] {
+  /* theme 2 */
+  /* Backgrounds */
+  --main-bgr: rgb(119, 156, 255);
+  --backgr: rgb(57, 57, 136);
+  --text-color: black;
+  --ball: rgb(145, 106, 0);
+}
+
+html[data-colormode="theme-3"] {
+  /* theme 3 */
+  /* Backgrounds */
+  --main-bgr: rgb(255, 215, 82);
+  --backgr: rgb(145, 143, 20);
+  --text-color: black;
+  --ball: rgb(0, 255, 242);
+}
+
+.toggle-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: var(--main-bgr);
+  gap: 10px;
+}
+
+input {
+  cursor: pointer;
+  appearance: none;
+  height: 25px;
+  width: 70px;
+  padding: 0 6px;
+  border-radius: 30px;
+  background-color: var(--backgr);
+}
+
+input::-webkit-slider-thumb {
+  background: var(--ball);
+  appearance: none;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
 /* toggle dark-mode slide start */
 body.dark {
   background-color: #292c35;
