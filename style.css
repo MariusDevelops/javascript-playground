@@ -15,6 +15,15 @@ body {
 
 /* ////////// TOGGLE START //////////// */
 /* three ball slider */
+:root {
+  /* theme 1 */
+  /* Backgrounds */
+  --main-bgr: rgb(123, 255, 134);
+  --backgr: rgb(30, 145, 59);
+  --text-color: black;
+  --ball: red;
+}
+
 html[data-colormode="theme-1"] {
   /* theme 1 */
   /* Backgrounds */
